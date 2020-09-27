@@ -1,0 +1,49 @@
+<html>
+	<head>
+	<title>ID CARD</title>
+	<link rel="stylesheet" href="test.css">
+	</head>
+	<div class="new">
+	<body>	<h1><u><b>ID CARD REGISTRATION</b></u></h1>
+		<form method="post" enctype="multipart/form-data">
+         	<b>First name:</b> <input type = "text" name = "first_name" />	
+         	<br><br>
+         	<b>Last name:</b> <input type = "text" name = "last_name" />
+		<br><br>
+		<b>ID:</b> <input type = "text" name = "id" />
+		<br><br>
+		<b>Course:</b>  
+		<select id = "course" name = "course">
+                	<option value = "B.Tech">B.Tech</option>
+               		<option value = "M.Tech">M.Tech</option>
+             	</select>
+		<br><br>
+		<b>Stream:</b>  
+		<select id = "stream" name = "stream">
+                	<option value = "CST">CST</option>
+               		<option value = "ETC">ETC</option>
+               		<option value = "EE">EE</option>
+               		<option value = "IT">IT</option>
+			<option value = "CE">CE</option>
+               		<option value = "ME">ME</option>
+               		<option value = "MET">MET</option>
+             	</select>
+		<br><br>
+		<b>Address:</b> <input type = "text" name = "address" />
+		<br><br>
+		<b>City:</b> <input type = "text" name = "city" />
+		<br><br>
+		<b>Mobile:</b> <input type = "text" name = "mobile" />
+		<br><br>
+		<b>Upload Image:</b> <input type = "file" name = "upfile" accept = "image/*" />
+		<br><br>
+		<input type = "submit" name = "submit" formaction="test.php" value = "Generate ID as PDF" />
+		<input type = "submit" name = "submit" formaction="image.php" value = "Generate ID as Image" />
+         	<input type = "reset" name = "reset"  value = "Reset" />
+		<br>
+		
+      		</form>
+
+	</body>
+	</div>
+</html>
